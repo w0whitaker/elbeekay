@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyVitePlugin);
 
   eleventyConfig.addWatchTarget("./src/assets/**/*");
+
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/main.css": "/assets/css/main.css",
   });
@@ -17,7 +18,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "dist",
       includes: "_includes",
-      layouts: "_layouts",
     },
   };
 };

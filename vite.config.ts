@@ -5,8 +5,7 @@ import mpa from 'vite-plugin-mpa';
 export default {
   plugins: [mpa(
     {
-      scanDir: 'dist/**/*',
-      scanFile: 'index.html',
+      scanDir: 'dist/**/*'
     }
   )],
 };
