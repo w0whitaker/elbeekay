@@ -3,5 +3,10 @@
 import mpa from 'vite-plugin-mpa';
 
 export default {
-  plugins: [mpa()],
+  plugins: [mpa(
+    {
+      scanDir: 'dist/**/*',
+      scanFile: 'index.html',
+    }
+  )],
 };
