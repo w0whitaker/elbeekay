@@ -8,3 +8,7 @@
 @tailwind components;
 /* stylelint-disable-next-line at-rule-no-unknown */
 @tailwind utilities;
+
+.hard-shadow {
+  box-shadow: -0.5rem 0.5rem 0 black;
+}

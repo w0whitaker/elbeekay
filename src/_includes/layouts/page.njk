@@ -2,18 +2,12 @@
 layout: layouts/base.njk
 ---
 {% include "partials/header.njk" %}
-<main>
-  <h1 class="ps-2 text-lg bg-amber-400">
-    {% if page.url === '/' | url %}
-      <span class="invisible">
-        {{ title }}
-      </span>
-    {% else %}
+<main class="mt-8 px-8">
+  <h1 class="ps-2 py-2 text-xl text-white hard-shadow bg-amber-400">
       <span>
         {{ title }}
       </span>
-    {% endif %}
-      </h1>
-    {{ content | safe }}
+  </h1>
+  {{ content | safe }}
 </main>
 {% include "partials/footer.njk" %}
