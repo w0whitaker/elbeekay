@@ -2,22 +2,20 @@
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(EleventyVitePlugin);
-
-  eleventyConfig.addWatchTarget("./src/assets/**/*");
-
-  eleventyConfig.addPassthroughCopy({
-    "./src/assets/css/main.css": "/assets/css/main.css",
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    appType: "mpa",
   });
-  eleventyConfig.addPassthroughCopy({
-    "./src/assets/scripts/main.ts": "/assets/scripts/main.ts",
-  });
+
+  eleventyConfig.addPassthroughCopy("./src/assets");
 
   return {
     dir: {
       input: "src",
-      output: "dist",
+      output: "_site",
       includes: "_includes",
     },
+    passthroughFileCopy: true,
+    templateFormats: ["html", "njk", "md"],
+    htmlTemplateEngine: "njk",
   };
 };
