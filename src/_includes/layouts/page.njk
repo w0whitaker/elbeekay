@@ -3,7 +3,17 @@ layout: layouts/base.njk
 ---
 {% include "partials/header.njk" %}
 <main>
-  <h1>{{ title }}</h1>
+  <h1 class="ps-2 text-lg bg-amber-400">
+    {% if page.url === '/' | url %}
+      <span class="invisible">
+        {{ title }}
+      </span>
+    {% else %}
+      <span>
+        {{ title }}
+      </span>
+    {% endif %}
+      </h1>
     {{ content | safe }}
 </main>
 {% include "partials/footer.njk" %}
