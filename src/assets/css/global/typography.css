@@ -16,6 +16,5 @@ h3 {
 }
 
 h4 {
-	/* stylelint-disable-next-line custom-property-pattern */
 	font-size: var(--step--1);
 }
