@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyVitePlugin, {});
 
   eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+  });
 
   return {
     dir: {
