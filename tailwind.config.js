@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+import path from "path";
 export default {
-  content: ["./src/**/*.{njk,md}"],
+  content: [path.join(__dirname, "./src/**/*.{njk,md}")],
   theme: {
     extend: {},
   },
   plugins: [],
-  corePlugins: {
-    preflight: false,
-  },
 };
