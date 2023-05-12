@@ -5,6 +5,7 @@ export default {
   presets: [
     require("./src/assets/design-tokens/colors.js"),
     require("./src/assets/design-tokens/typography.js"),
+    require("./src/assets/design-tokens/spacing.js"),
   ],
   theme: {
     extend: {},
