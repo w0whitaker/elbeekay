@@ -5,10 +5,13 @@ permalink: /projects/
 ---
 
 {# loop over each post in the projects collection #}
-<ul>
+<ul class="flex flex-col gap-xl">
   {% for project in collections.projects %}
     <li>
-      <a href="{{ project.url }}">{{ project.data.title }}</a>
+      <div class="[ flex justify-between items-center ]">
+        <a href="{{ project.url }}" class="[ align-middle ]">{{ project.data.title }}</a>
+        <img src="/4-3-land.svg" alt="placeholder" class="placeholder" />
+      </div>
     </li>
   {% endfor %}
 </ul>
