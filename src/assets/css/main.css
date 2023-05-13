@@ -6,5 +6,5 @@
 @tailwind utilities;
 
 .placeholder {
-  max-width: 100px;
+  max-height: 33vw;
 }
