@@ -1,20 +1,22 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="flex flex-col min-h-screen">
+<div class="layout:[ flex flex-col min-h-screen ]">
   {% include "partials/header.njk" %}
-  <div class="flex-1 flex flex-col sm:flex-row">
-    <main class="[ mt-s px-s py-s] [ flex-1 ]">
-      <div class="flex flex-col">
-        <h1 class="spacing:[ py-xs ] text:[ text-step-4 font-bold text-dark ] [ border-solid border-b-2 border-secondary ]">
+  <div class="layout:[ flex-1 flex flex-col sm:flex-row ]">
+    <main class="layout:[ flex-1 ] spacing:[ mt-s px-s py-s]">
+      <div class="layout:[ flex flex-col ]">
+        <h1 class="spacing:[ py-xs ] typography:[ text-step-4 font-bold text-dark ] aesthetic:[ border-solid border-b-2 border-secondary ]">
             <span>{{ title }}</span>
         </h1>
-        <div class="[ flex-1 ] [ mt-l ]">
-          {{ content | safe }}
+        <div class="layout:[ flex-1 ] spacing:[ mt-l ]">
+          <article class="layout:[ sm:flex ] spacing:[ px-m py-xs ] typography:[ text-step-0 text-dark ]">
+            {{ content | safe }}
+          </article>
         </div>
       </div>
     </main>
-    <div class="[ order-first ] [ p-s ]">
+    <div class="layout:[ order-first ] spacing:[ p-s ]">
       {% include "partials/nav.njk" %}
     </div>
   </div>
