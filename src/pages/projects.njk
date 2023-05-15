@@ -10,7 +10,7 @@ permalink: "/projects/"
         <a href="{{ project.name | slugify }}/">{{ project.name }}</a>
       </h3>
       <p>{{ project.description }}</p>
-      <img src="{{ project.thumbnail.url | url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
+      <img src="{{ project.thumbnail.url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
     </li>
   </ul>
 {% endfor %}
