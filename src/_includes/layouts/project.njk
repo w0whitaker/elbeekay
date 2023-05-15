@@ -1,4 +1,13 @@
 ---
 layout: layouts/page.njk
 ---
-{{ content | safe }}
+{# project title #}
+<header>
+  <h3>{{ title }}</h3>
+</header>
+{# thumbnail #}
+<img src={{ image }} alt={{ altText }} class="placeholder">
+{# project description #}
+<section>{{ content | safe }}</section>
+{# gallery #}
+

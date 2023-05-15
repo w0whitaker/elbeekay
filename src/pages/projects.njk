@@ -3,15 +3,14 @@ layout: layouts/page.njk
 title: "Projects."
 permalink: /projects/
 ---
-
-{# loop over each post in the projects collection #}
-<ul class="layout:[ flex flex-col gap-xl ]">
-  {% for project in collections.projects %}
+{% for project in projects %}
+  <ul>
     <li>
-      <div class="layout:[ flex justify-between items-center ]">
-        <a href="{{ project.url }}" class="layout:[ align-middle ]">{{ project.data.title }}</a>
-        <img src="/4-3-land.svg" alt="placeholder" class="aesthetic:[ placeholder ]" />
-      </div>
+      <h3>
+        <a href="{{ project.permalink | url }}">{{ project.name }}</a>
+      </h3>
+      <p>{{ project.description }}</p>
+      <img src="{{ project.thumbnail.url | url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
     </li>
-  {% endfor %}
-</ul>
+  </ul>
+{% endfor %}

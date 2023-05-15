@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Example 1.",
+    "description": "This is an example of a description.",
+    "permalink": "/projects/example-1/",
+    "thumbnail": {
+      "url": "/images/sq.svg",
+      "alt": "placeholder image"
+    }
+  },
+  {
+    "name": "Example 2.",
+    "description": "This is an example of a description.",
+    "thumbnail": {
+      "url": "/images/sq.svg",
+      "alt": "placeholder image"
+    }
+  },
+  {
+    "name": "Example 3.",
+    "description": "This is an example of a description.",
+    "thumbnail": {
+      "url": "/images/sq.svg",
+      "alt": "placeholder image"
+    }
+  },
+  {
+    "name": "Example 4.",
+    "description": "This is an example of a description.",
+    "thumbnail": {
+      "url": "/images/sq.svg",
+      "alt": "placeholder image"
+    }
+  },
+  {
+    "name": "Example 5.",
+    "description": "This is an example of a description.",
+    "thumbnail": {
+      "url": "/images/sq.svg",
+      "alt": "placeholder image"
+    }
+  }
+
+]
