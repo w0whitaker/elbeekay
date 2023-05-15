@@ -1,7 +1,11 @@
 ---
-layout: layouts/page.njk
+layout: layouts/project.njk
 title: "Projects."
-permalink: /projects/
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.name | slugify }}/"
 ---
 {% for project in projects %}
   <ul>

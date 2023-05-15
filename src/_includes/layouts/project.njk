@@ -3,11 +3,11 @@ layout: layouts/page.njk
 ---
 {# project title #}
 <header>
-  <h3>{{ title }}</h3>
+  <h3>{{ project.name }}</h3>
 </header>
 {# thumbnail #}
-<img src={{ image }} alt={{ altText }} class="placeholder">
+<img src={{ project.thumbnail.url }} alt={{ project.thumbnail.alt }} class="placeholder">
 {# project description #}
-<section>{{ content | safe }}</section>
-{# gallery #}
+<p>{{ project.description }}</p>
+{# project gallery #}
 
