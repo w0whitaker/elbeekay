@@ -4,17 +4,18 @@ layout: layouts/base.njk
 <div class="layout:[ flex flex-col min-h-screen ]">
   {% include "partials/header.njk" %}
   <div class="layout:[ flex-1 flex flex-col sm:flex-row ]">
-    <main class="layout:[ flex-1 ] spacing:[ mt-s px-s py-s]">
+    <main class="layout:[ flex-1 ] spacing:[ mt-xs px-s py-s]">
       <div class="layout:[ flex flex-col ]">
         {% if pageTitle %}
           {% include "partials/page-title.njk" %}
         {% endif %}
-        <div class="layout:[ flex-1 ] spacing:[ mt-l ]">
+        <div class="layout:[ flex-1 ]">
+          <!-- extent of page layout -->
           {{ content | safe }}
         </div>
       </div>
     </main>
-    <div class="layout:[ order-first ] spacing:[ p-s ]">
+    <div class="layout:[ order-first ] spacing:[ px-s py-xs ]">
       {% include "partials/nav.njk" %}
     </div>
   </div>
