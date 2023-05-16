@@ -1,0 +1,14 @@
+---
+layout: layouts/article.njk
+---
+{% if formType === 'contact' %}
+<form action="" class="layout:[ flex flex-col justify-between ] spacing:[ pb-xs ]">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name..." class="spacing:[ py-xs ] aesthetic:[ border ]">
+  <label for="email" class="spacing:[ mt-xs ]">Email</label>
+  <input type="text" id="email" name="email" placeholder="Your email..." class="spacing:[ py-xs ] aesthetic:[ border ]">
+  <label for="message" class="spacing:[ mt-xs ]">Message</label>
+  <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..." class="spacing:[ py-xs ] aesthetic:[ border ]"></textarea>
+  <button type="submit" class="spacing:[ mt-xs ] aesthetic:[ border ]">Send</button>
+</form>
+{% endif %}
