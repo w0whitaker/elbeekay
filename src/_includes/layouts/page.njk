@@ -6,13 +6,11 @@ layout: layouts/base.njk
   <div class="layout:[ flex-1 flex flex-col sm:flex-row ]">
     <main class="layout:[ flex-1 ] spacing:[ mt-s px-s py-s]">
       <div class="layout:[ flex flex-col ]">
-        <h1 class="spacing:[ py-xs ] typography:[ text-step-4 font-bold text-dark ] aesthetic:[ border-solid border-b-2 border-secondary ]">
-            <span>{{ title }}</span>
-        </h1>
+        {% if pageTitle %}
+          {% include "partials/page-title.njk" %}
+        {% endif %}
         <div class="layout:[ flex-1 ] spacing:[ mt-l ]">
-          <article class="layout:[ sm:flex ] spacing:[ px-m py-xs ] typography:[ text-step-0 text-dark ]">
-            {{ content | safe }}
-          </article>
+          {{ content | safe }}
         </div>
       </div>
     </main>
