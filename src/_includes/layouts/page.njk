@@ -9,7 +9,7 @@ layout: layouts/base.njk
         {% if pageTitle %}
           {% include "partials/page-title.njk" %}
         {% endif %}
-        <div class="layout:[ flex-1 ]">
+        <div class="layout:[ flex-1 sm:flex sm:justify-center ]">
           <!-- extent of page layout -->
           {{ content | safe }}
         </div>

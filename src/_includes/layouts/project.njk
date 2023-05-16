@@ -1,13 +1,10 @@
 ---
 layout: layouts/page.njk
 ---
-{# project title #}
-<header>
-  <h3>{{ project.name }}</h3>
-</header>
-{# thumbnail #}
-<img src={{ project.thumbnail.url }} alt={{ project.thumbnail.alt }} class="placeholder">
-{# project description #}
-<p>{{ project.description }}</p>
-<p>lorem dipsum</p>
-{# project gallery #}
+<div class="flex flex-col">
+  <header>
+    <h3>{{ project.name }}</h3>
+  </header>
+  <img src={{ project.thumbnail.url }} alt={{ project.thumbnail.alt }} class="placeholder">
+  <p>{{ project.description }}</p>
+</div>
