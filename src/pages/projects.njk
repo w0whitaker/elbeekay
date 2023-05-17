@@ -3,14 +3,18 @@ layout: layouts/gallery.njk
 pageTitle: "Projects."
 permalink: "/projects/"
 ---
-{% for project in projects %}
-<div class="layout:[ flex flex-col sm:flex-row gap-s justify-between basis-1/2 ] spacing:[ mb-m pr-l ]">
-  <div class="sm:flex sm:flex-col sm:gap-l">
-    <h3>
-      <a href="{{ project.name | slugify }}/">{{ project.name }}</a>
-    </h3>
-    <p class="sm:basis-10 sm:shrink">{{ project.description }}</p>
-  </div>
-  <img src="{{ project.thumbnail.url | url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
-</div>
-{% endfor %}
+<ul>
+  {%- for project in collections.projects -%}
+  <li>
+    <div class="layout:[ flex flex-col sm:flex-row gap-s justify-between basis-1/2 ] spacing:[ mb-m pr-l ]">
+      <div class="sm:flex sm:flex-col sm:gap-l">
+        <h3>
+          <a href="{{ project.data.title | slugify }}/">{{ project.data.title }}</a>
+        </h3>
+        <p class="sm:basis-10 sm:shrink">{{ project.description }}</p>
+      </div>
+      <img src="{{ project.thumbnail.url | url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
+    </div>
+  </li>
+  {%- endfor -%}
+</ul>
