@@ -1,8 +1,15 @@
 ---
-layout: layouts/project.njk
+layout: layouts/article.njk
 pagination:
   data: projects
   size: 1
   alias: project
 permalink: "projects/{{ project.name | slugify }}/"
 ---
+<div class="flex flex-col">
+  <header>
+    <h3>{{ project.name }}</h3>
+  </header>
+  <img src={{ project.thumbnail.url }} alt={{ project.thumbnail.alt }} class="placeholder">
+  <p>{{ project.description }}</p>
+</div>
