@@ -2,7 +2,7 @@
 layout: layouts/project.njk
 title: The fourth such example
 date: 2023-05-18T17:39:37.313Z
-thumbnail: /public/images/uploads/sq.svg
+thumbnail: /public/images/uploads/4-3-port.svg
 blurb: >+
   Try to sudo the CSS-in-JS subclass, maybe it will commit the stateless
   shareware!
