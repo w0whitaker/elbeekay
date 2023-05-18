@@ -5,15 +5,15 @@ permalink: "/projects/"
 ---
 <ul>
   {%- for project in collections.projects -%}
-  <li>
+  <li class="spacing:[ mt-s ] aesthetic:[ border-solid border-tertiary border-b-2 ]">
     <div class="layout:[ flex flex-col sm:flex-row gap-s justify-between basis-1/2 ] spacing:[ mb-m pr-l ]">
       <div class="sm:flex sm:flex-col sm:gap-l">
-        <h3>
+        <h3 class="typography:[ font-bold ]">
           <a href="{{ project.data.title | slugify }}/">{{ project.data.title }}</a>
         </h3>
-        <p class="sm:basis-10 sm:shrink">{{ project.data.blurb }}</p>
+        <p class="layout:[ sm:basis-10 sm:shrink ] spacing:[ pt-s ] typography:[ text-step--1 ]">{{ project.data.blurb }}</p>
       </div>
-      <img src="{{ project.data.thumbnail | imageUrl }}" alt="{{ project.data.thumbnail | imageUrl }}" class="placeholder" >
+      <img src="{{ project.data.thumbnail | imageUrl }}" alt="{{ project.data.thumbnail | imageUrl }}" class="placeholder layout:[ self-center ]" >
     </div>
   </li>
   {%- endfor -%}
