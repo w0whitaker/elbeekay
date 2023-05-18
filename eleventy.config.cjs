@@ -10,6 +10,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyVitePlugin, {});
 
+  eleventyConfig.addWatchTarget("./src/projects");
+
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",

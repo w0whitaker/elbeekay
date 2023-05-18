@@ -6,5 +6,5 @@ layout: layouts/article.njk
     <h3>{{ title }}</h3>
   </header>
   <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder" >
-  <p>{{ message }}</p>
+  <p>{{ content | safe }}</p>
 </div>

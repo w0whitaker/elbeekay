@@ -11,7 +11,7 @@ permalink: "/projects/"
         <h3>
           <a href="{{ project.data.title | slugify }}/">{{ project.data.title }}</a>
         </h3>
-        <p class="sm:basis-10 sm:shrink">{{ project.description }}</p>
+        <p class="sm:basis-10 sm:shrink">{{ project.data.blurb }}</p>
       </div>
       <img src="{{ project.data.thumbnail | imageUrl }}" alt="{{ project.data.thumbnail | imageUrl }}" class="placeholder" >
     </div>
