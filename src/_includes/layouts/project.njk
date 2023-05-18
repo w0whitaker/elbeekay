@@ -1,10 +1,10 @@
 ---
 layout: layouts/article.njk
 ---
-{{ collections.projects | log }}
 <div class="flex flex-col">
   <header>
     <h3>{{ title }}</h3>
   </header>
-  <img src="{{ thumbnail }}" alt="blah" class="placeholder" > 
+  <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder" >
+  <p>{{ message }}</p>
 </div>
