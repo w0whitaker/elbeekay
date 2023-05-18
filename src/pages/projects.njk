@@ -13,7 +13,7 @@ permalink: "/projects/"
         </h3>
         <p class="sm:basis-10 sm:shrink">{{ project.description }}</p>
       </div>
-      <img src="{{ project.thumbnail.url | url }}" alt="{{ project.thumbnail.alt }}" class="placeholder" >
+      <img src="{{ project.data.thumbnail | imageUrl }}" alt="{{ project.data.thumbnail | imageUrl }}" class="placeholder" >
     </div>
   </li>
   {%- endfor -%}
