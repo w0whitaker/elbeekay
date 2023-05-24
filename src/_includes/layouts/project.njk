@@ -6,7 +6,7 @@ layout: layouts/article.njk
     <header>
       <h3 class="typography:[ font-bold ]">{{ title }}</h3>
     </header>
-    <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder" >
+    <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder order-first" >
     <p>{{ content | safe }}</p>
   </div>
 </div>
