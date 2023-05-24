@@ -2,9 +2,11 @@
 layout: layouts/article.njk
 ---
 <div class="flex flex-col">
-  <header>
-    <h3>{{ title }}</h3>
-  </header>
-  <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder" >
-  <p>{{ content | safe }}</p>
+  <div class="layout:[ flex flex-col sm:flex-grow gap-s justify-between basis-1 ] spacing:[ mb-m pr-l ]">
+    <header>
+      <h3 class="typography:[ font-bold ]">{{ title }}</h3>
+    </header>
+    <img src="{{ thumbnail | imageUrl }}" alt="blah" class="placeholder" >
+    <p>{{ content | safe }}</p>
+  </div>
 </div>
